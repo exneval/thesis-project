@@ -1,0 +1,243 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 16, 2018, 5:37:01 PM
+    Author     : exneval
+*/
+
+/**
+ * splash.fxml
+ */
+.jfx-splash-anchor-pane {
+    -fx-background-radius: 20;
+    -fx-background-color: radial-gradient(center 50% 50% , radius 300px , #ffebcd, #ff6400);
+    -fx-border-radius: 20;
+}
+
+/**
+ * dashboard.fxml
+ */
+.jfx-dashboard-button {
+    -fx-background-color: transparent;
+}
+
+.jfx-dashboard-button:hover {
+    -fx-background-color: #707070;
+}
+
+/**
+ * selectdoc.fxml
+ */
+.jfx-selectdoc-anchor-pane {
+    -fx-border-color: black;
+    -fx-border-width: 0 10 10 0;
+}
+
+.jfx-selectdoc-step-anchor-pane {
+    -fx-border-color: black;
+    -fx-border-width: 10 10 10 0;
+}
+
+.jfx-selectdoc-button-upload {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.jfx-selectdoc-button-upload:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+
+.jfx-selectdoc-button-start {
+    -fx-background-color: 
+        linear-gradient(#686868 0%, #232723 25%, #373837 75%, #757575 100%),
+        linear-gradient(#020b02, #3a3a3a),
+        linear-gradient(#b9b9b9 0%, #c2c2c2 20%, #afafaf 80%, #c8c8c8 100%),
+        linear-gradient(#f5f5f5 0%, #dbdbdb 50%, #cacaca 51%, #d7d7d7 100%);
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+
+.jfx-selectdoc-button-start Text {
+    -fx-effect: dropshadow( one-pass-box , white , 0, 0.0 , 0 , 1 );
+}
+
+/**
+ * casefold.fxml
+ */
+.jfx-casefold-anchor-pane {
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 0 10 10 0;
+    -fx-border-radius: 0;
+}
+
+/**
+ * token.fxml
+ */
+.jfx-token-anchor-pane {
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 0 10 10 0;
+    -fx-border-radius: 0;
+}
+
+.jfx-token-tableview .table-column {
+    -fx-alignment: CENTER;
+}
+
+/**
+ * filter.fxml
+ */
+.jfx-filter-anchor-pane {
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 0 10 10 0;
+    -fx-border-radius: 0;
+}
+
+.jfx-filter-tableview .table-column {
+    -fx-alignment: CENTER;
+}
+
+/**
+ * stem.fxml
+ */
+.jfx-stem-anchor-pane {
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 0 10 10 0;
+    -fx-border-radius: 0;
+}
+
+.jfx-stem-tableview .table-column {
+    -fx-alignment: CENTER;
+}
+
+/**
+ * rkbm.fxml
+ */
+.jfx-rkbm-anchor-pane {
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 0 10 10 0;
+    -fx-border-radius: 0;
+}
+
+/**
+ * rkbm2.fxml
+ */
+.jfx-rkbm2-anchor-pane {
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 0 10 10 0;
+    -fx-border-radius: 0;
+}
+
+/**
+ * rkbm3.fxml
+ */
+.jfx-rkbm3-anchor-pane {
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 0 10 10 0;
+    -fx-border-radius: 0;
+}
+
+/**
+ * rkbm4.fxml
+ */
+.jfx-rkbm4-anchor-pane {
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 0 10 10 0;
+    -fx-border-radius: 0;
+}
+
+/**
+ * Arrow buttons
+ */
+.jfx-arrow-button-next {
+    -fx-fill: #333333;
+}
+
+.jfx-arrow-button-next:hover {
+    -fx-fill: green;
+}
+
+.jfx-arrow-button-prev {
+    -fx-fill: #333333;
+}
+
+.jfx-arrow-button-prev:hover {
+    -fx-fill: red;
+}
+
+/**
+ * rkbmdetails.fxml
+ */
+.jfx-rkbmdetails-anchor-pane {
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 10 10 10 10;
+    -fx-border-radius: 0;
+}
+
+.myDialog {
+    -fx-background-radius: 10;
+    -fx-background-color: #141414;
+    -fx-border-radius: 10;
+}
+
+.myDialog > *.label.content {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.myDialog:header *.header-panel {
+    -fx-background-radius: 10 10 0 0;
+    -fx-background-color: #707070;
+    -fx-border-radius: 10 10 0 0;
+}
+
+.myDialog:header *.header-panel *.label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+body {
+    font-family: system;
+    font-size: 12px;
+}
+
+.highlightgreen {
+    color: white;
+    background-color: green;
+}
+
+.highlightblue {
+    color: white;
+    background-color: blue;
+}

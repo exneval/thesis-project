@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="224.0" prefWidth="623.0" styleClass="jfx-splash-anchor-pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="205.0" fitWidth="161.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/img/logo-itenas.png" />
+         </image>
+      </ImageView>
+      <JFXProgressBar fx:id="splashProgress" blendMode="HARD_LIGHT" layoutX="14.0" layoutY="179.0" prefHeight="17.0" prefWidth="598.0" />
+      <Label layoutX="180.0" layoutY="121.0" text="PLAGIARISM DETECTION APPLICATION" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="96.0" text="Tri Aginta Ginting - 2018" textFill="WHITE">
+         <font>
+            <Font name="Garamond" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="483.0" layoutY="199.0" text="Loading, please wait ..." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="575.0" layoutY="145.0" text="v 1.0" textFill="WHITE">
+         <font>
+            <Font name="Garamond" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="129.0" layoutX="515.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/img/logo-javafx.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

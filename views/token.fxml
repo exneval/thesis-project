@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="528.0" style="-fx-background-color: white;" styleClass="jfx-token-anchor-pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="srcTokenTable" layoutX="218.0" layoutY="97.0" prefHeight="282.0" prefWidth="199.0" styleClass="jfx-token-tableview">
+        <columns>
+          <TableColumn fx:id="srcTokenCol" editable="false" prefWidth="183.0" text="Source Tokenizing" />
+        </columns>
+      </TableView>
+      <TableView fx:id="testTokenTable" layoutX="529.0" layoutY="97.0" prefHeight="282.0" prefWidth="199.0" styleClass="jfx-token-tableview">
+         <columns>
+            <TableColumn fx:id="testTokenCol" editable="false" prefWidth="183.0" text="Test Tokenizing" />
+         </columns>
+      </TableView>
+      <Text layoutX="162.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 3: Tokenizing">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnNext" layoutX="877.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+         <graphic>
+            <FontAwesomeIconView fill="#333333" glyphName="ARROW_CIRCLE_RIGHT" size="4EM" styleClass="jfx-arrow-button-next" />
+         </graphic></Button>
+      <Label layoutX="890.0" layoutY="62.0" text="Next">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnPrev" layoutX="35.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+         <graphic>
+            <FontAwesomeIconView fill="#333333" glyphName="ARROW_CIRCLE_LEFT" size="4EM" styleClass="jfx-arrow-button-prev" />
+         </graphic>
+      </Button>
+      <Label layoutX="48.0" layoutY="62.0" text="Prev">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text fx:id="tokenText1" layoutX="215.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="tokenvalText1" layoutX="405.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="tokenText2" layoutX="525.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="tokenvalText2" layoutX="715.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="timerText" layoutX="800.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Courier New" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

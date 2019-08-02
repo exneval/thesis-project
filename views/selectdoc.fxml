@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="detectPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane style="-fx-background-color: white;" styleClass="jfx-selectdoc-step-anchor-pane" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="160.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="287.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="413.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="540.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="667.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="793.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fx:id="imgStep1" fill="RED" glyphName="TIMES" layoutX="162.0" layoutY="61.0" size="4em" />
+            <FontAwesomeIconView fx:id="imgStep2" fill="RED" glyphName="TIMES" layoutX="289.0" layoutY="60.0" size="4em" />
+            <FontAwesomeIconView fx:id="imgStep3" fill="RED" glyphName="TIMES" layoutX="415.0" layoutY="60.0" size="4em" />
+            <FontAwesomeIconView fx:id="imgStep4" fill="RED" glyphName="TIMES" layoutX="542.0" layoutY="60.0" size="4em" />
+            <FontAwesomeIconView fx:id="imgStep5" fill="RED" glyphName="TIMES" layoutX="669.0" layoutY="60.0" size="4em" />
+            <FontAwesomeIconView fx:id="imgStep6" fill="RED" glyphName="TIMES" layoutX="795.0" layoutY="59.0" size="4em" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane fx:id="detectCenterPane" prefHeight="528.0" style="-fx-background-color: white;" styleClass="jfx-selectdoc-anchor-pane" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnChoose1" layoutX="299.0" layoutY="271.0" mnemonicParsing="false" styleClass="jfx-selectdoc-button-upload" text="Choose" textFill="WHITE" />
+            <Text fx:id="actionStatus1" layoutX="280.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnChoose2" layoutX="591.0" layoutY="271.0" mnemonicParsing="false" styleClass="jfx-selectdoc-button-upload" text="Choose" textFill="WHITE" />
+            <Text fx:id="actionStatus2" layoutX="570.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="162.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 1: Choose the Documents">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnNext" layoutX="857.0" layoutY="445.0" mnemonicParsing="false" styleClass="jfx-selectdoc-button-start" text="Start" textFill="WHITE" visible="false" />
+            <FontAwesomeIconView fill="#333333" glyphName="FILE" layoutX="286.0" layoutY="227.0" size="10EM" text="" />
+            <FontAwesomeIconView fill="#333333" glyphName="FILE" layoutX="578.0" layoutY="227.0" size="10EM" text="" />
+            <ImageView fx:id="imgSourceDoc" fitHeight="50.0" fitWidth="50.0" layoutX="312.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/icons8-error-100.png" />
+               </image></ImageView>
+            <ImageView fx:id="imgTestDoc" fitHeight="50.0" fitWidth="50.0" layoutX="604.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/img/icons8-error-100.png" />
+               </image></ImageView>
+            <Text layoutX="88.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecting Source Document :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="88.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecting Test Document :">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="pathStatus1" layoutX="287.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Waiting for the file..." textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="pathStatus2" layoutX="268.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Waiting for the file..." textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

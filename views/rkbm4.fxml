@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="528.0" style="-fx-background-color: white;" styleClass="jfx-rkbm4-anchor-pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="162.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Step 6: Final Algorithm">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="162.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Final Phase : Similarity Calculation">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnShowDetails" layoutX="788.0" layoutY="445.0" mnemonicParsing="false" styleClass="jfx-selectdoc-button-start" text="Show Details" />
+      <Button fx:id="btnPrev" layoutX="35.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+         <graphic>
+            <FontAwesomeIconView fill="#333333" glyphName="ARROW_CIRCLE_LEFT" size="4em" styleClass="jfx-arrow-button-prev" />
+         </graphic>
+      </Button>
+      <Label layoutX="48.0" layoutY="62.0" text="Prev">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="435.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of hash values in source document (THA) :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="srcHashCountText" layoutX="760.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="435.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of hash values in test document (THB) :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="testHashCountText" layoutX="740.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="435.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of matched hash values (SH) :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="matchHashCountText" layoutX="680.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="435.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Similarity percentage between source and test document (P) :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="similarityValText" layoutX="825.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="245.0" layoutX="149.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="265.0" />
+      <StackPane fx:id="formulaStackPane" layoutX="162.0" layoutY="105.0" prefHeight="300.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>
